@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input
+        type="range"
+        class="phone"
+        value="0"
+        min="0"
+        max="9"
+        step="1"
+        oninput="changeValue(this.value)"
+        onchange="setNumber(this.value)"
+      />
+    </div>
+    <div class="phone-number"></div>
+    <button onclick="removeNumber()">Remove Number</button>
+  </body>
+</html>
