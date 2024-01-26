@@ -12,7 +12,6 @@ function changeValue(number) {
 }
 
 function setNumber(number) {
-  console.log(number);
   phoneNumber += number;
   document.querySelector(".phone-number").innerHTML = phoneNumber;
   resetNumber();
